@@ -6,7 +6,7 @@
 
 */
 
-	var NUM_PARTICLES = ( ( ROWS = 30 ) * ( COLS = 60 ) ),
+	var NUM_PARTICLES = ( ( ROWS = 60 ) * ( COLS = 60 ) ),
 		    THICKNESS = Math.pow( 60, 2 ),
 		    SPACING = 24,
 		    MARGIN = 0,
