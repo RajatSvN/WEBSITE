@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Desktop Nav</title>
+    <style type="text/css">
+      
+    #semicircle{
+       
+      position: fixed;
+      background-color: #343A40;
+      border-radius: 50%;
+      bottom: 0;
+      background-image: url(logo2.jpg);
+      background-size: 80px;
+      background-position:50% 50%;
+      background-repeat:no-repeat;
+      z-index: 2;
+      
+    }
+
+    .navbar{
+
+      height: 13%;
+      z-index: 1;
+
+    }
+
+    .icon{
+
+      height: 32px;
+      width: 32px;
+
+
+
+    }
+
+    .nav-item{
+
+      text-align: center;
+      margin-right: 110px;
+
+    }
+
+    .separator{
+      margin-left: 0px;
+      margin-right: 140px;
+
+      
+    }
+
+    .bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.9s infinite linear;
+  -o-animation: bounce 0.9s infinite linear;
+  -webkit-animation: bounce 0.9s infinite linear;
+  animation: bounce 0.9s 1 linear;
+  colr:000;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+   @keyframes alpha {
+    from {background-size: 80px}
+    to {background-size: 90px }
+   }
+
+   @keyframes revalpha {
+    from {background-size: 90px}
+    to {background-size: 80px}
+   }
+
+
+    </style>
+  </head>
+  <body>
+
+<div>
+</div>    
+
+    <div id="semicircle"></div>
+
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark"  id="botnav">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+<div class="d-flex justify-content-between">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><img src="login.png" class="icon"><br>Login</a>
+      </li>
+
+      <li class="nav-item active">
+        
+        <a class="nav-link" href="#"><img src="sponsor2.png" class="icon"><br>Sponsors</a>
+      
+      </li>
+
+      <li class="nav-item active">
+        
+        <a class="nav-link" href="#"><img src="workshop2.png" class="icon"><br>Workshop</a>
+      
+      </li>
+      
+      <li class="nav-item active">
+        
+        <a class="nav-link" href="#"><img src="register.png" class="icon"><br>Register</a>
+      
+      </li>
+
+      
+
+</ul>
+</div>
+      <div class="separator"></div>
+
+<div class="d-flex justify-content-between">
+<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        
+        <a class="nav-link" href="#"><img src="contact.png" class="icon"><br>Contact</a>
+      
+      </li>
+
+      <li class="nav-item active">
+        
+        <a class="nav-link" href="#"><img src="schedule.png" class="icon"><br>Schedule</a>
+      
+      </li>
+
+      <li class="nav-item active">
+        
+        <a class="nav-link" href="#"><img src="FeedBack.png" class="icon"><br>Feedback</a>
+      
+      </li>
+
+      <li class="nav-item active">
+        
+        <a class="nav-link" href="#"><img src="calendar.png" class="icon"><br>Events</a>
+      
+      </li>
+      
+
+      
+    </ul>
+  </div>
+  </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      
+
+      var navHeight = $("#botnav").height();
+      
+
+      $("#semicircle").css("height",navHeight*2);
+      $("#semicircle").css("width",navHeight*2);
+      $("#semicircle").css("margin-left",($(window).width()-$("#semicircle").width())/2);
+      
+
+
+      $(window).resize(function(){
+
+        $("#semicircle").css("margin-left",($(window).width()-$("#semicircle").width())/2);
+
+      })
+
+      $("#semicircle").mouseenter(function() {
+
+        $(this).css("animation-name","alpha");
+        $(this).css("animation-duration","1s");
+        $(this).css("background-size","90px");
+
+      })
+
+      $("#semicircle").mouseleave(function() {
+
+        $(this).css("animation-name","revalpha");
+        $(this).css("animation-duration","1s");
+        $(this).css("background-size","80px");
+
+      })
+
+      $(".icon").mouseenter(function(){
+
+        $(this).addClass("bounce");
+
+      })
+
+      $(".icon").mouseleave(function(){
+
+        $(this).removeClass("bounce");
+
+      })
+             
+
+
+    </script>
+  </body>
+</html>
