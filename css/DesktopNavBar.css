@@ -1,0 +1,75 @@
+#semicircle{
+       
+      position: fixed;
+      background-color: #343A40;
+      border-radius: 50%;
+      bottom: 0;
+      background-image: url(logo2.jpg);
+      background-size: 80px;
+      background-position:50% 50%;
+      background-repeat:no-repeat;
+      z-index: 2;
+      
+    }
+
+    .navbar{
+
+      height: 13%;
+      z-index: 1;
+
+    }
+
+    .icon{
+
+      height: 32px;
+      width: 32px;
+
+
+
+    }
+
+    .nav-item{
+
+      text-align: center;
+      margin-right: 110px;
+
+    }
+
+    .separator{
+      margin-left: 0px;
+      margin-right: 140px;
+
+      
+    }
+
+    .bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.9s infinite linear;
+  -o-animation: bounce 0.9s infinite linear;
+  -webkit-animation: bounce 0.9s infinite linear;
+  animation: bounce 0.9s 1 linear;
+  colr:000;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+   @keyframes alpha {
+    from {background-size: 80px}
+    to {background-size: 90px }
+   }
+
+   @keyframes revalpha {
+    from {background-size: 90px}
+    to {background-size: 80px}
+   }
