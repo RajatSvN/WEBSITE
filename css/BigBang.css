@@ -1,0 +1,23 @@
+body{
+
+	margin: 0;
+	padding: 0;
+	background: black;
+
+}
+
+.dot{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	background: rgba(255,92,51,1);
+	box-shadow: 0 0 20px rgba(255,92,51,1),
+				0 0 40px rgba(255,92,51,1),
+				0 0 60px rgba(255,92,51,1),
+				0 0 80px rgba(255,92,51,1);
+	transition: 1.5s;
+}
+
