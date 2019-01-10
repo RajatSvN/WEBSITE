@@ -6,7 +6,7 @@
 
 */
 
-	var NUM_PARTICLES = ( ( ROWS = 60 ) * ( COLS = 60 ) ),
+	var NUM_PARTICLES = ( ( ROWS = 66 ) * ( COLS = 66 ) ),
 		    THICKNESS = Math.pow( 60, 2 ),
 		    SPACING = 24,
 		    MARGIN = 0,
@@ -47,8 +47,8 @@
 
 			p.x = p.ox = MARGIN + SPACING * ( i % COLS );
 			if(p.x > window.innerWidth){
-				p.destroy();
-				continue;
+				//p.destroy();
+				//continue;
 			}
 
 			if(i%2==0)
