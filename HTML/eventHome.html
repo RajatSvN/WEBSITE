@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="../javascript/eventhomejs.js"></script>
+
+	<style src="../css/eventhomeCSS.css"></style>
+
+	<style type="text/css">
+		#section_technical{
+			min-height:200px;
+			color:#FFF;
+			background-color: #1E88E5;
+		}
+		#section_managerial{
+			min-height:200px;
+			color:#FFF;
+			background-color: #673ab7;
+		}
+		#section_informals{
+			min-height:200px;
+			color:#FFF;
+			background-color: #ff9800;
+		}
+		#section_nights{
+			min-height:200px;
+			color:#FFF;
+			background-color: #009688;
+		}
+	</style>
+
+</head>
+<body onload="init_eventhome()">
+	<nav class="navbar navbar-inverse" style="margin-bottom: -5px">
+	  <div class="container-fluid">
+	    <ul class="nav navbar-nav">
+	      <li><a onclick="showTechnical()" id="btn_technical">Technical Events</a></li>
+	      <li><a onclick="showManagerial()" id="btn_managerial">Managerial Events</a></li>
+	      <li><a onclick="showInformals()" id="btn_informals">Informals</a></li>
+	      <li><a onclick="showNights()" id="btn_nights">Night Events</a></li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div id="section_technical" class="container-fluid">
+	  <h1>Technical Events</h1>  
+	</div>
+
+	<div id="section_managerial" class="container-fluid">
+	  <h1>Managerial Events</h1>
+	</div>
+
+	<div id="section_informals" class="container-fluid">
+	  <h1>Informal Events</h1>
+	</div>
+
+	<div id="section_nights" class="container-fluid">
+	  <h1>Night Events</h1>
+	</div>
+</body>
+</html>
