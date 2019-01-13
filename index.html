@@ -14,24 +14,35 @@
 
 	<script src="javascript/indexbackground.js"></script>
 
+
 	<link rel="stylesheet" href="css/BigBang.css">
+
+	<link rel="stylesheet" type="text/css" href="css/countdowntimer.css">
+
+
 
 	<!-- <link rel="stylesheet" href="css/starcloudbg.css"> -->
 
 	<style type="text/css">
 
-		#container {
+		/*#container {
 		  background: #111;
 		  margin:-5px;
 		  z-index: -1;
 		  position: absolute;
-		}
+		}*/
 
 		.logo{
-			margin-left:500px;
-			margin-top:120px;
 			width:300px;
 			height:250px;
+		}
+
+		.logodiv{
+			/*z-index: -1;*/
+			position: absolute;
+			top:30%;
+			left:40%;
+
 		}
 
 	/*external css not working why*/
@@ -94,8 +105,11 @@
 	  -webkit-animation:move-clouds-back 200s linear infinite;
 	  /*animation:move-clouds-back 200s linear infinite;*/
 	}
-		
-	</style>
+
+</style>
+
+
+
 </head>
 <body onload="init()">
 
@@ -104,12 +118,29 @@
 	<div class="twinkling"></div>
 	<div class="clouds"></div>
 
-	<div = "logodiv" style="z-index: 0;position: absolute;">
+	<div class="logodiv">
 	<img src="images/sparshLogo.jpg" class="logo">
 	</div>
 
-	<a href = "events" class="e1" style="left-margin:200px;z-index:1;position: absolute;">Events</a>
+	<a href = "#" class="e1" style="position:absolute;left:16%;top:25%">Events</a>
+	<a href = "#" class="e2" style="position:absolute;left:12%;top:35%">Social</a>
+	<a href = "#" class="e3" style="position:absolute;left:8%;top:45%">History</a>
+	<a href = "#" class="e4" style="position:absolute;left:6%;top:55%">Sponcers</a>
+	<a href = "#" class="e5" style="position:absolute;right:16%;top:25%">Workshops</a>
+	<a href = "#" class="e6" style="position:absolute;right:12%;top:35%">Schedule</a>
+	<a href = "#" class="e7" style="position:absolute;right:8%;top:45%">Gallary</a>
+	<a href = "#" class="e8" style="position:absolute;right:6%;top:55%">Contact us</a>
 
+    <div class="countdown" data-date="20-2-2019" data-time="09:00">
+      <div class="day"><span class="num"></span><span class="word"></span></div>
+      <div class="hour"><span class="num"></span><span class="word"></span></div>
+      <div class="min"><span class="num"></span><span class="word"></span></div>
+      <div class="sec"><span class="num"></span><span class="word"></span></div>
+    </div>
+
+
+  	<script type="text/javascript" src="javascript/countdown.js"></script>
+  	<script type="text/javascript" src="javascript/init.js"></script>
 
 </body>
 </html>
