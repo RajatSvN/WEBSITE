@@ -1,0 +1,36 @@
+    .countdown {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      text-align: center;
+      left:40%;
+      font-family: century gothic;
+      z-index: 1;
+    }
+
+    .countdown .day,
+    .countdown .hour,
+    .countdown .min,
+    .countdown .sec {
+      color: #2799ff;
+      padding: 1vw 1vw;
+      text-align: center;
+    }
+
+    .countdown .day .num,
+    .countdown .hour .num,
+    .countdown .min .num,
+    .countdown .sec .num {
+      display: block;
+      font-size: 2vw;
+      line-height: 1em;
+    }
+
+    .countdown .day .word,
+    .countdown .hour .word,
+    .countdown .min .word,
+    .countdown .sec .word {
+      display: block;
+      font-size: 1.5vw;
+      color: #8a99ab;
+    }
