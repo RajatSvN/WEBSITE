@@ -14,5 +14,4 @@
 
 	$('.dot').delay(500).fadeOut(3000);
 	// $('.logodiv').fadeIn(1000);
-
 }
