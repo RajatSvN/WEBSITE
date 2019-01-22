@@ -1,7 +1,7 @@
 	function init(){
-	// 	$(document).ready(function() {
- 	//    $(".logodiv").delay(2000).fadeIn(500);
-	// });
+	$(document).ready(function() {
+ 	   $(".logodiv").delay(2000).fadeIn(500);
+	});
 
 	$(".dot").click(function(){
 
@@ -9,9 +9,9 @@
 
    	})
 
-	setTimeout(function(){$(".dot").trigger("click")},250);
+	setTimeout(function(){$(".dot").trigger("click")},200);
 	
 
-	$('.dot').delay(500).fadeOut(3000);
-	// $('.logodiv').fadeIn(1000);
+	$('.dot').delay(400).fadeOut(2000);
+	$('.logodiv').fadeIn(1000);
 }

@@ -14,10 +14,11 @@
 
 	<script src="javascript/indexbackground.js"></script>
 
+	<script src="javascript/newcountdownJS.js"></script>
 
 	<link rel="stylesheet" href="css/BigBang.css">
 
-	<link rel="stylesheet" type="text/css" href="css/countdowntimer.css">
+	<link rel="stylesheet" type="text/css" href="css/newcountdown.css">
 
 	<link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
 
@@ -26,22 +27,12 @@
 
 	<style type="text/css">
 
-		/*#container {
-		  background: #111;
-		  margin:-5px;
-		  z-index: -1;
-		  position: absolute;
-		}*/
-
 		.link{
 			font-family: 'ZCOOL KuaiLe', cursive;
 			color: white;
 			font-size: 24px;
 			cursor: pointer;
-
 		}
-
-
 
 		.logo{
 			width:300px;
@@ -53,75 +44,72 @@
 			position: absolute;
 			top:30%;
 			left:40%;
-
 		}
 
-	/*external css not working why*/
-	@keyframes move-twink-back {
-	    from {background-position:0 0;}
-	    to {background-position:-10000px 5000px;}
-	}
-	@-webkit-keyframes move-twink-back {
-	    from {background-position:0 0;}
-	    to {background-position:-10000px 5000px;}
-	}
-	@-moz-keyframes move-twink-back {
-	    from {background-position:0 0;}
-	    to {background-position:-10000px 5000px;}
-	}
+		/*external css not working on star cloud background don't know why*/
+		@keyframes move-twink-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+		@-webkit-keyframes move-twink-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
+		@-moz-keyframes move-twink-back {
+		    from {background-position:0 0;}
+		    to {background-position:-10000px 5000px;}
+		}
 
-	@keyframes move-clouds-back {
-	    from {background-position:0 0;}
-	    to {background-position:10000px 0;}
-	}
-	@-webkit-keyframes move-clouds-back {
-	    from {background-position:0 0;}
-	    to {background-position:10000px 0;}
-	}
-	@-moz-keyframes move-clouds-back {
-	    from {background-position:0 0;}
-	    to {background-position:10000px 0;}
-	}
+		@keyframes move-clouds-back {
+		    from {background-position:0 0;}
+		    to {background-position:10000px 0;}
+		}
+		@-webkit-keyframes move-clouds-back {
+		    from {background-position:0 0;}
+		    to {background-position:10000px 0;}
+		}
+		@-moz-keyframes move-clouds-back {
+		    from {background-position:0 0;}
+		    to {background-position:10000px 0;}
+		}
 
-	.stars, .twinkling, .clouds {
-	  position:absolute;
-	  top:0;
-	  left:0;
-	  right:0;
-	  bottom:0;
-	  width:100%;
-	  height:100%;
-	  display:block;
-	}
-	.stars {
-	  background:#000 url(images/stars.png) repeat top center;
-	  z-index:-1;
-	}
-	.twinkling{
-	  background:transparent url(images/twinkling.png) repeat top center;
-	  z-index:-1;
-	  -moz-animation:move-twink-back 200s linear infinite;
-	  -ms-animation:move-twink-back 200s linear infinite;
-	  -o-animation:move-twink-back 200s linear infinite;
-	  -webkit-animation:move-twink-back 200s linear infinite;
-	  animation:move-twink-back 200s linear infinite;
-	}
-	.clouds{
-	    background:transparent url(images/clouds3.png) repeat top center;
-	    z-index:-1;
+		.stars, .twinkling, .clouds {
+		  position:absolute;
+		  top:0;
+		  left:0;
+		  right:0;
+		  bottom:0;
+		  width:100%;
+		  height:100%;
+		  display:block;
+		}
+		.stars {
+		  background:#000 url(images/stars.png) repeat top center;
+		  z-index:-1;
+		}
+		.twinkling{
+		  background:transparent url(images/twinkling.png) repeat top center;
+		  z-index:-1;
+		  -moz-animation:move-twink-back 200s linear infinite;
+		  -ms-animation:move-twink-back 200s linear infinite;
+		  -o-animation:move-twink-back 200s linear infinite;
+		  -webkit-animation:move-twink-back 200s linear infinite;
+		  animation:move-twink-back 200s linear infinite;
+		}
+		.clouds{
+		    background:transparent url(images/clouds3.png) repeat top center;
+		    z-index:-1;
 
-	  /*-moz-animation:move-clouds-back 200s linear infinite;*/
-	  /*-ms-animation:move-clouds-back 200s linear infinite;*/
-	  /*-o-animation:move-clouds-back 200s linear infinite;*/
-	  -webkit-animation:move-clouds-back 200s linear infinite;
-	  /*animation:move-clouds-back 200s linear infinite;*/
-	}
+		  /*-moz-animation:move-clouds-back 200s linear infinite;*/
+		  /*-ms-animation:move-clouds-back 200s linear infinite;*/
+		  /*-o-animation:move-clouds-back 200s linear infinite;*/
+		  -webkit-animation:move-clouds-back 200s linear infinite;
+		  /*animation:move-clouds-back 200s linear infinite;*/
+		}
 
-</style>
-
-
-
+	</style>
 </head>
+
 <body onload="init()">
 
 	<div class="dot" style="z-index: 0"></div>
@@ -130,7 +118,7 @@
 	<div class="clouds"></div>
 
 	<div class="logodiv">
-	<img src="images/sparshLogo.jpg" class="logo">
+	<img src="images/main_png_file.png" class="logo">
 	</div>
 
 	<div href = "#" class="e1 link" style="position:absolute;left:16%;top:25%">Events</div>
@@ -142,16 +130,12 @@
 	<div href = "#" class="e7 link" style="position:absolute;right:8%;top:45%">Gallery</div>
 	<div href = "#" class="e8 link" style="position:absolute;right:6%;top:55%">Contact us</div>
 
-    <div class="countdown" data-date="20-2-2019" data-time="09:00">
-      <div class="day"><span class="num"></span><span class="word"></span></div>
-      <div class="hour"><span class="num"></span><span class="word"></span></div>
-      <div class="min"><span class="num"></span><span class="word"></span></div>
-      <div class="sec"><span class="num"></span><span class="word"></span></div>
+    <div id="countdown">
+      <div class="clock"><div id="day"></div><div class="wday">day</div></div>
+      <div class="clock"><div id="hour"></div><div class="wday">hour</div></div>
+      <div class="clock"><div id="min"></div><div class="wday">min</div></div>
+      <div class="clock"><div id="sec"></div><div class="wday">sec</div></div>
     </div>
-
-
-  	<script type="text/javascript" src="javascript/countdown.js"></script>
-  	<script type="text/javascript" src="javascript/init.js"></script>
 
 </body>
 </html>
