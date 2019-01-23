@@ -12,11 +12,11 @@
 	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<script src="javascript/indexbackground.js"></script>
+	<!-- <script src="javascript/indexbackground.js"></script> -->
 
 	<script src="javascript/newcountdownJS.js"></script>
 
-	<link rel="stylesheet" href="css/BigBang.css">
+	<!-- <link rel="stylesheet" href="css/BigBang.css"> -->
 
 	<link rel="stylesheet" type="text/css" href="css/newcountdown.css">
 
@@ -30,7 +30,7 @@
 		.link{
 			font-family: 'ZCOOL KuaiLe', cursive;
 			color: white;
-			font-size: 24px;
+			font-size: 30px;
 			cursor: pointer;
 		}
 
@@ -107,6 +107,121 @@
 		  /*animation:move-clouds-back 200s linear infinite;*/
 		}
 
+    /*--------------------------------------------------------------------------------------------*/
+	  .e1,
+      .e2,
+      .e3,
+      .e4 {
+        float: left;
+        width: 80px;
+        height: 60px;
+        text-align: center;
+        /* -webkit-transition: 1s ease-in-out;
+            -moz-transition: 1s ease-in-out;
+            -o-transition: 1s ease-in-out;
+      transition: 1s ease-in-out; */
+        -webkit-animation: mymove 1.5s; /* Chrome, Safari, Opera */
+        animation: mymove 1.5s;
+        animation-fill-mode: forwards;
+      }
+      /* Safari 4.0 - 8.0 */
+      .e1 {
+        -webkit-animation-timing-function: cubic-bezier(0, 0, 0.6, 1);
+        animation-timing-function: cubic-bezier(0, 0, 0.6, 1);
+      }
+      .e2 {
+        -webkit-animation-timing-function: cubic-bezier(0.2, 0.2, 0.8, 1);
+        animation-timing-function: cubic-bezier(0.2, 0.2, 0.8, 1);
+      }
+      .e3 {
+        -webkit-animation-timing-function: cubic-bezier(0.5, 0.4, 0.9, 1);
+        animation-timing-function: cubic-bezier(0.5, 0.4, 0.9, 1);
+      }
+      .e4 {
+        -webkit-animation-timing-function: cubic-bezier(0.8, 0.6, 1, 1);
+        animation-timing-function: cubic-bezier(0.8, 0.6, 1, 1);
+      }
+
+      /* Chrome, Safari, Opera */
+	  @-webkit-keyframes mymove {
+		from {
+          left: 100px;
+          opacity: 0;
+        }
+        to {
+          left: 400px;
+          opacity: 1;
+        } 
+      }
+
+      @keyframes mymove {
+        from {
+          left: 100px;
+          opacity: 0;
+        }
+        to {
+          left: 400px;
+          opacity: 1;
+        }
+      }
+
+	  /*--------------------------------------------------------------------------------------------*/
+	  .e5,
+      .e6,
+      .e7,
+      .e8 {
+        float: left;
+        width: 80px;
+        height: 60px;
+        text-align: center;
+        /* -webkit-transition: 1s ease-in-out;
+            -moz-transition: 1s ease-in-out;
+            -o-transition: 1s ease-in-out;
+      transition: 1s ease-in-out; */
+        -webkit-animation: mymove2 1.5s; /* Chrome, Safari, Opera */
+        animation: mymove2 1.5s;
+        animation-fill-mode: forwards;
+      }
+      /* Safari 4.0 - 8.0 */
+      .e5 {
+        -webkit-animation-timing-function: cubic-bezier(0, 0, 0.6, 1);
+        animation-timing-function: cubic-bezier(0, 0, 0.6, 1);
+      }
+      .e6 {
+        -webkit-animation-timing-function: cubic-bezier(0.2, 0.2, 0.8, 1);
+        animation-timing-function: cubic-bezier(0.2, 0.2, 0.8, 1);
+      }
+      .e7 {
+        -webkit-animation-timing-function: cubic-bezier(0.5, 0.4, 0.9, 1);
+        animation-timing-function: cubic-bezier(0.5, 0.4, 0.9, 1);
+      }
+      .e8 {
+        -webkit-animation-timing-function: cubic-bezier(0.8, 0.6, 1, 1);
+        animation-timing-function: cubic-bezier(0.8, 0.6, 1, 1);
+      }
+
+      /* Chrome, Safari, Opera */
+      @-webkit-keyframes mymove2 {
+        from {
+          right: 100px;
+          opacity: 0;
+        }
+        to {
+          right: 400px;
+          opacity: 1;
+        }
+      }
+
+      @keyframes mymove2 {
+        from {
+          right: 100px;
+          opacity: 0;
+        }
+        to {
+          right: 400px;
+          opacity: 1;
+        }
+      }
 	</style>
 </head>
 
@@ -128,7 +243,7 @@
 	<div href = "#" class="e5 link" style="position:absolute;right:16%;top:25%">Workshops</div>
 	<div href = "#" class="e6 link" style="position:absolute;right:12%;top:35%">Schedule</div>
 	<div href = "#" class="e7 link" style="position:absolute;right:8%;top:45%">Gallery</div>
-	<div href = "#" class="e8 link" style="position:absolute;right:6%;top:55%">Contact us</div>
+	<div href = "#" class="e8 link" style="position:absolute;right:6%;top:55%">Contact</div>
 
     <div id="countdown">
       <div class="clock"><div id="day"></div><div class="wday">day</div></div>
