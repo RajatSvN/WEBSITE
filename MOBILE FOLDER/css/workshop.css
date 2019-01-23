@@ -1,0 +1,29 @@
+div.row.featurette{
+	margin: 3% 0%;
+}
+h2.featurette-heading{
+	margin: 1em 1em;
+}
+div.col-6{
+	float: left;
+	text-align: center;
+}
+div.discription{
+	margin: 1em 2em;
+}
+div.venue{
+	text-align: center;
+}
+p.button{
+	float: right;
+	margin: 5% 8%;
+}
+div.date-time{
+	padding-bottom: 3%;
+}
+
+
+.setting123{
+	width:100%;
+	margin-top:120px;
+}

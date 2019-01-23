@@ -1,0 +1,84 @@
+.sponsorImage{
+
+height: 125px;
+width: 125px;
+margin: 30px;
+}
+
+
+.imgContainer{
+  
+ margin:30px;
+  height: 200px;
+  width:200px;
+  border-radius: 3%;
+  background-color: white;
+  transition: height, 0.45s;
+  transition: width, 0.45s;
+}
+
+#main{
+  width:100%;
+  background-color: #F3F4F3;
+}
+
+
+.imgContainer:hover{
+  height: 205px;
+  width: 205px;
+}
+
+.container{
+  background-color: #F3F4F3;
+}
+
+#giveBackGround{
+
+  width: 100%;
+
+  background-color: #F3F4F3;
+
+  
+
+}
+
+.smallScreen{
+  width: 100%;
+  text-align: center;
+  background-color: #F3F4F3;
+
+  
+
+  display: none;
+}
+
+.wrapper{
+  width: 400px;
+  margin:auto;
+}
+
+
+.row{
+  height:300px;
+}
+  
+  @media screen and (max-width : 992px){
+    #giveBackGround{
+      display: none;
+    }
+    .smallScreen{
+      display: block;
+    }
+    .imgContainer{
+      display: inline-block;
+    }
+    .row{
+      display: inline-block;
+    }
+  }
+
+
+  .setting123{
+    width:100%;
+    margin-top: 120px;
+  }

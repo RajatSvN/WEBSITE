@@ -1,0 +1,91 @@
+body{
+    box-sizing: border-box;
+}
+#cards{
+    position: absolute;
+    top:600px;
+    width:100%;
+    padding: 10px;
+}
+
+.row1{
+    clear: both;
+    width:100%;
+}
+
+.col1{
+    float: left;
+    width:50%;
+}
+.col2{
+    float: right;
+    width:50%;
+}
+.card{
+    background-color: rgba(256,256,256,0);
+    width:90%;
+    margin: 15px auto;
+}
+
+.login{
+    position: fixed;
+    z-index: 2;
+    bottom: 2%;
+    right: 2%;
+    width:15%;
+    height:15%;
+}
+
+.login1{
+    position: fixed;
+    bottom: 15%;
+    right: 3%;
+    width:10%;
+    height:10%;
+    opacity:0;
+    transition: all 0.5s;
+}
+.login2{
+    position: fixed;
+    bottom: 25%;
+    right: 3%;
+    width:10%;
+    height:10%;
+    opacity:0;
+    transition: all 0.5s;
+}
+
+.login1add{
+    opacity:1;
+}
+.loginadd{
+    transform: rotate(45deg);
+}
+
+.p1{
+    color: blue;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 15%;
+    right: 13%;
+    opacity:0;
+    transition: all 0.5s;
+}
+
+.p2{
+    color: blue;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: fixed;
+    bottom:25%;
+    right: 13%;
+    opacity:0;
+    transition: all 0.5s;
+}
+.padd{
+    opacity:1; 
+}
+a .card{
+    text-decoration: none;
+}
