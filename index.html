@@ -32,6 +32,7 @@
 			color: white;
 			font-size: 30px;
 			cursor: pointer;
+      text-decoration: none;
 		}
 
 		.logo{
@@ -42,8 +43,8 @@
 		.logodiv{
 			/*z-index: -1;*/
 			position: absolute;
-			top:30%;
-			left:40%;
+			top:20%;
+			left:39%;
 		}
 
 		/*external css not working on star cloud background don't know why*/
@@ -108,7 +109,7 @@
 		}
 
     /*--------------------------------------------------------------------------------------------*/
-	  .e1,
+.e1,
       .e2,
       .e3,
       .e4 {
@@ -120,53 +121,127 @@
             -moz-transition: 1s ease-in-out;
             -o-transition: 1s ease-in-out;
       transition: 1s ease-in-out; */
-        -webkit-animation: mymove 1.5s; /* Chrome, Safari, Opera */
-        animation: mymove 1.5s;
+        /*-webkit-animation: mymove 1.5s;  Chrome, Safari, Opera 
+        animation: mymove 1.5s;*/
         animation-fill-mode: forwards;
       }
       /* Safari 4.0 - 8.0 */
       .e1 {
-        -webkit-animation-timing-function: cubic-bezier(0, 0, 0.6, 1);
+        -webkit-animation: mymoveA 1.5s;  Chrome, Safari, Opera 
+        animation: mymoveA 1.5s;
+        -webkit-animation-timing-function: cubic-bezier(0, 0, 0, 0);
         animation-timing-function: cubic-bezier(0, 0, 0.6, 1);
       }
       .e2 {
+        -webkit-animation: mymoveB 1.5s;  Chrome, Safari, Opera 
+        animation: mymoveB 1.5s;
         -webkit-animation-timing-function: cubic-bezier(0.2, 0.2, 0.8, 1);
         animation-timing-function: cubic-bezier(0.2, 0.2, 0.8, 1);
       }
       .e3 {
+        -webkit-animation: mymoveC 1.5s;  Chrome, Safari, Opera 
+        animation: mymoveC 1.5s;
         -webkit-animation-timing-function: cubic-bezier(0.5, 0.4, 0.9, 1);
         animation-timing-function: cubic-bezier(0.5, 0.4, 0.9, 1);
       }
       .e4 {
+        -webkit-animation: mymoveD 1.5s;  Chrome, Safari, Opera 
+        animation: mymoveD 1.5s;
         -webkit-animation-timing-function: cubic-bezier(0.8, 0.6, 1, 1);
         animation-timing-function: cubic-bezier(0.8, 0.6, 1, 1);
       }
 
       /* Chrome, Safari, Opera */
-	  @-webkit-keyframes mymove {
-		from {
-          left: 100px;
+    @-webkit-keyframes mymoveA {
+    from {
+          left: -10%;
           opacity: 0;
         }
         to {
-          left: 400px;
+          left: 21%;
           opacity: 1;
         } 
       }
 
-      @keyframes mymove {
+      @keyframes mymoveA {
         from {
-          left: 100px;
+          left: -10%;
           opacity: 0;
         }
         to {
-          left: 400px;
+          left: 21%;
           opacity: 1;
         }
       }
 
-	  /*--------------------------------------------------------------------------------------------*/
-	  .e5,
+      @-webkit-keyframes mymoveB {
+    from {
+          left: -10%;
+          opacity: 0;
+        }
+        to {
+          left: 16%;
+          opacity: 1;
+        } 
+      }
+
+      @keyframes mymoveB {
+        from {
+          left: -10%;
+          opacity: 0;
+        }
+        to {
+          left: 16%;
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes mymoveC {
+    from {
+          left: -10%;
+          opacity: 0;
+        }
+        to {
+          left: 12%;
+          opacity: 1;
+        } 
+      }
+
+      @keyframes mymoveC {
+        from {
+          left: -10%;
+          opacity: 0;
+        }
+        to {
+          left: 12%;
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes mymoveD {
+    from {
+          left: -10%;
+          opacity: 0;
+        }
+        to {
+          left: 8%;
+          opacity: 1;
+        } 
+      }
+
+      @keyframes mymoveD {
+        from {
+          left: -10%;
+          opacity: 0;
+        }
+        to {
+          left: 8%;
+          opacity: 1;
+        }
+      }
+
+    /*--------------------------------------------------------------------------------------------*/
+    .e5,
       .e6,
       .e7,
       .e8 {
@@ -178,54 +253,125 @@
             -moz-transition: 1s ease-in-out;
             -o-transition: 1s ease-in-out;
       transition: 1s ease-in-out; */
-        -webkit-animation: mymove2 1.5s; /* Chrome, Safari, Opera */
-        animation: mymove2 1.5s;
+       /* -webkit-animation: mymove2 1.5s;  Chrome, Safari, Opera 
+        animation: mymove2 1.5s;*/
         animation-fill-mode: forwards;
       }
       /* Safari 4.0 - 8.0 */
       .e5 {
+        -webkit-animation: mymove2A 1.5s;
+        animation: mymove2A 1.5s;
         -webkit-animation-timing-function: cubic-bezier(0, 0, 0.6, 1);
         animation-timing-function: cubic-bezier(0, 0, 0.6, 1);
       }
       .e6 {
+        -webkit-animation: mymove2B 1.5s;
+        animation: mymove2B 1.5s;
         -webkit-animation-timing-function: cubic-bezier(0.2, 0.2, 0.8, 1);
         animation-timing-function: cubic-bezier(0.2, 0.2, 0.8, 1);
       }
       .e7 {
+        -webkit-animation: mymove2C 1.5s;
+        animation: mymove2C 1.5s;
         -webkit-animation-timing-function: cubic-bezier(0.5, 0.4, 0.9, 1);
         animation-timing-function: cubic-bezier(0.5, 0.4, 0.9, 1);
       }
       .e8 {
+        -webkit-animation: mymove2D 1.5s;
+        animation: mymove2D 1.5s;
         -webkit-animation-timing-function: cubic-bezier(0.8, 0.6, 1, 1);
         animation-timing-function: cubic-bezier(0.8, 0.6, 1, 1);
       }
 
       /* Chrome, Safari, Opera */
-      @-webkit-keyframes mymove2 {
+      @-webkit-keyframes mymove2A {
         from {
-          right: 100px;
+          right: -10%;
           opacity: 0;
         }
         to {
-          right: 400px;
+          right: 23%;
           opacity: 1;
         }
       }
 
-      @keyframes mymove2 {
+      @keyframes mymove2A {
         from {
-          right: 100px;
+          right: -10%;
           opacity: 0;
         }
         to {
-          right: 400px;
+          right: 23%;
           opacity: 1;
         }
       }
-	</style>
+      @-webkit-keyframes mymove2B {
+        from {
+          right: -10%;
+          opacity: 0;
+        }
+        to {
+          right: 18%;
+          opacity: 1;
+        }
+      }
+
+      @keyframes mymove2B {
+        from {
+          right: -10%;
+          opacity: 0;
+        }
+        to {
+          right: 18%;
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes mymove2C {
+        from {
+          right: -10%;
+          opacity: 0;
+        }
+        to {
+          right: 14%;
+          opacity: 1;
+        }
+      }
+
+      @keyframes mymove2C {
+        from {
+          right: -10%;
+          opacity: 0;
+        }
+        to {
+          right: 14%;
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes mymove2D {
+        from {
+          right: -10%;
+          opacity: 0;
+        }
+        to {
+          right: 10%;
+          opacity: 1;
+        }
+      }
+
+      @keyframes mymove2D {
+        from {
+          right: -10%;
+          opacity: 0;
+        }
+        to {
+          right: 10%;
+          opacity: 1;
+        }
+      }
+  </style>
 </head>
 
-<body onload="init()">
+<body>
 
 	<div class="dot" style="z-index: 0"></div>
 	<div class="stars"></div>
@@ -236,14 +382,15 @@
 	<img src="images/logo.png" class="logo">
 	</div>
 
-	<a href = "./HTML/socialCause.html" class="e2 link" style="position:absolute;left:12%;top:35%">Social</a>
-	<a href = "./HTML/eventHome.html" class="e1 link" style="position:absolute;left:16%;top:25%">Events</a>
-	<a href = "./about.php" class="e3 link" style="position:absolute;left:8%;top:45%">History</a>
-	<a href = "./HTML/Sponsors.html" class="e4 link" style="position:absolute;left:6%;top:55%">Sponsors</a>
-	<a href = "./HTML/Workshop.html" class="e5 link" style="position:absolute;right:16%;top:25%">Workshops</a>
-	<a href = "#" class="e6 link" style="position:absolute;right:12%;top:35%">Schedule</a>
-	<a href = "./gallery.php" class="e7 link" style="position:absolute;right:8%;top:45%">Gallery</a>
-	<a href = "./HTML/Contacts.html" class="e8 link" style="position:absolute;right:6%;top:55%">Contact</a>
+	
+	<a href = "./HTML/eventHome.html" class="e1 link" style="position:absolute;left:21%;top:25%">Events</a>
+  <a href = "./HTML/socialCause.html" class="e2 link" style="position:absolute;left:16%;top:35%">Social</a>
+	<a href = "./about.php" class="e3 link" style="position:absolute;left:12%;top:45%">History</a>
+	<a href = "./HTML/Sponsors.html" class="e4 link" style="position:absolute;left:8%;top:55%">Sponsors</a>
+	<a href = "./HTML/Workshop.html" class="e5 link" style="position:absolute;right:23%;top:25%">Workshops</a>
+	<a href = "#" class="e6 link" style="position:absolute;right:18%;top:35%">Schedule</a>
+	<a href = "./gallery.php" class="e7 link" style="position:absolute;right:14%;top:45%">Gallery</a>
+	<a href = "./HTML/Contacts.html" class="e8 link" style="position:absolute;right:10%;top:55%">Contact</a>
 
     <div id="countdown">
       <div class="clock"><div id="day"></div><div class="wday">day</div></div>
