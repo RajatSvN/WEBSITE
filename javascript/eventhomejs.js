@@ -16,15 +16,15 @@ function init_eventhome(){
 	btnTechnical.style.borderBottom = "2px solid #FFF"
 
 	sectionManagerial.style.display = "none";
-	btnManagerial.style.fontSize = "1em";
+	btnManagerial.style.fontSize = "1.2em";
 	btnManagerial.style.borderBottom = "none"
 
 	sectionInformals.style.display = "none";
-	btnInformals.style.fontSize = "1em";
+	btnInformals.style.fontSize = "1.2em";
 	btnInformals.style.borderBottom = "none"
 
 	sectionNights.style.display = "none";
-	btnNights.style.fontSize = "1em";
+	btnNights.style.fontSize = "1.2em";
 	btnNights.style.borderBottom = "none"
 
 }
@@ -46,17 +46,17 @@ function showTechnical(){
 	btnTechnical.style.borderBottom = "2px solid #FFF"
 
 	sectionManagerial.style.display = "none";
-	btnManagerial.style.fontSize = "1em";
+	btnManagerial.style.fontSize = "1.2em";
 	btnManagerial.style.color="#e0e0d1";
 	btnManagerial.style.borderBottom = "none"
 
 	sectionInformals.style.display = "none";
-	btnInformals.style.fontSize = "1em";
+	btnInformals.style.fontSize = "1.2em";
 	btnInformals.style.color="#e0e0d1";
 	btnInformals.style.borderBottom = "none"
 
 	sectionNights.style.display = "none";
-	btnNights.style.fontSize = "1em";
+	btnNights.style.fontSize = "1.2em";
 	btnNights.style.color="#e0e0d1";
 	btnNights.style.borderBottom = "none"
 
@@ -74,7 +74,7 @@ function showManagerial(){
 	btnNights = document.getElementById('btn_nights');
 
 	sectionTechnical.style.display = "none";
-	btnTechnical.style.fontSize = "1em";
+	btnTechnical.style.fontSize = "1.2em";
 	btnTechnical.style.color="#e0e0d1";
 	btnTechnical.style.borderBottom = "none"
 
@@ -84,12 +84,12 @@ function showManagerial(){
 	btnManagerial.style.borderBottom = "2px solid #FFF"
 
 	sectionInformals.style.display = "none";
-	btnInformals.style.fontSize = "1em";
+	btnInformals.style.fontSize = "1.2em";
 	btnInformals.style.color="#e0e0d1";
 	btnInformals.style.borderBottom = "none"
 
 	sectionNights.style.display = "none";
-	btnNights.style.fontSize = "1em";
+	btnNights.style.fontSize = "1.2em";
 	btnNights.style.color="#e0e0d1";
 	btnNights.style.borderBottom = "none"
 
@@ -106,13 +106,13 @@ function showInformals(){
 	btnInformals = document.getElementById('btn_informals');
 	btnNights = document.getElementById('btn_nights');
 
-	btnTechnical.style.fontSize = "1em";
+	btnTechnical.style.fontSize = "1.2em";
 	sectionTechnical.style.display = "none";
 	btnTechnical.style.color="#e0e0d1";
 	btnTechnical.style.borderBottom = "none"
 
 	sectionManagerial.style.display = "none";
-	btnManagerial.style.fontSize = "1em";
+	btnManagerial.style.fontSize = "1.2em";
 	btnManagerial.style.color="#e0e0d1";
 	btnManagerial.style.borderBottom = "none"
 
@@ -122,7 +122,7 @@ function showInformals(){
 	btnInformals.style.borderBottom = "2px solid #FFF"
 
 	sectionNights.style.display = "none";
-	btnNights.style.fontSize = "1em";
+	btnNights.style.fontSize = "1.2em";
 	btnNights.style.color="#e0e0d1";
 	btnNights.style.borderBottom = "none"
 
@@ -140,17 +140,17 @@ function showNights(){
 	btnNights = document.getElementById('btn_nights');
 
 	sectionTechnical.style.display = "none";
-	btnTechnical.style.fontSize = "1em";
+	btnTechnical.style.fontSize = "1.2em";
 	btnTechnical.style.color="#e0e0d1";
 	btnTechnical.style.borderBottom = "none"
 
 	sectionManagerial.style.display = "none";
-	btnManagerial.style.fontSize = "1em";
+	btnManagerial.style.fontSize = "1.2em";
 	btnManagerial.style.color="#e0e0d1";
 	btnManagerial.style.borderBottom = "none"
 
 	sectionInformals.style.display = "none";
-	btnInformals.style.fontSize = "1em";
+	btnInformals.style.fontSize = "1.2em";
 	btnInformals.style.color="#e0e0d1";
 	btnInformals.style.borderBottom = "none"
 
