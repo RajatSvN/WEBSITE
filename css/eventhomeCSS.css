@@ -116,18 +116,21 @@ li a{
 		}
 		
 		#register{
-
 			text-decoration: none;
 			font-family: sans-serif;
 			background:#33cc33;
 			color:white;
-			pointer:cursor;
 			border-radius:30px;
 			
 		}
 		#details{
 			background:#ff9900;
 			color:white;
-			pointer:cursor;
 			border-radius:30px;
 		}
+		[role="button"],
+        button,
+        input[type="button"]{
+			cursor: pointer;
+		}
+		

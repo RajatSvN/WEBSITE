@@ -37,10 +37,10 @@
 	.bounce {
 	  display: inline-block;
 	  position: relative;
-	  -moz-animation: bounce1 0.9s infinite linear;
-	  -o-animation: bounce1 0.9s infinite linear;
-	  -webkit-animation: bounce1 0.9s infinite linear;
-	  animation: bounce1 0.9s 1 linear;
+	  -moz-animation: bounce1 1s infinite linear;
+	  -o-animation: bounce1 1s infinite linear;
+	  -webkit-animation: bounce1 1s infinite linear;
+	  animation: bounce1 1s infinite linear;
 	  color:000;
 	}
 
@@ -51,10 +51,10 @@
 		-moz-transform:translateY(0);
 	  }
 	  40% {
-		transform: translateY(-25px);
-		-webkit-transform: translateY(-25px);
-		-moz-transform:translateY(-25px);
-	  }
+		transform: translateY(-40px);
+		-webkit-transform: translateY(-40px);
+		-moz-transform:translateY(-40px);
+		}
 	  60% {
 		transform: translateY(-15px);
 		-webkit-transform: translateY(-15px);
@@ -85,9 +85,19 @@
 	  z-index:4;
 	  opacity:1;
 	  margin-bottom:2vh;
-	  text-shadow:5px 5px 5px red;
+		text-shadow:5px 5px 5px red;
+		-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 	  }
-	  
+	  .icon:hover{
+			cursor: pointer;
+  animation-name: bounce1;
+  -moz-animation-name: bounce1;
+		}
 	 
 	  
 	  .mainicon{

@@ -6,12 +6,13 @@ body{
 .loader-box{
   padding-top:35vh;
   width:100%;
-  height:64%;
+  height:100vh;
   margin:0 auto;
   -moz-border-radius:5px;
   -webkit-border-radius:5px;
   border-radius:5px;
   background: url(https://subtlepatterns.com/patterns/stardust.png);
+  /* background-size: cover; */
   text-align:center;
   z-index:11;
   opacity:1;
