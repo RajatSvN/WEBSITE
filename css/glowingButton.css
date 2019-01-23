@@ -3,18 +3,20 @@ body {
     padding: 0;
     background: #000;
 }
-
-a {
+a:hover{
+    text-decoration:none;
+}
+.button {
     position: absolute;
-    top: 50%;
+    bottom: 20%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 200px;
-    height: 60px;
+    width: 150px;
+    height: 40px;
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
     color: #fff;
-    font-size: 24px;
+    font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
     font-family: sans-serif;
@@ -25,7 +27,7 @@ a {
     z-index: 1;
 }
 
-a:hover {
+.button:hover {
     animation: animate 8s linear infinite;
 }
 
@@ -38,7 +40,7 @@ a:hover {
     }
 }
 
-a:before {
+.button:before {
     content: '';
     position: absolute;
     top: -5px;
@@ -53,7 +55,7 @@ a:before {
     
 }
 
-a:hover:before {
+.button:hover:before {
     filter: blur(20px);
     opacity: 1;
     animation: animate 8s linear infinite;
