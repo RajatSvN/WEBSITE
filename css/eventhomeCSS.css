@@ -1,20 +1,133 @@
-#section_technical{
+	#section_technical{
 	min-height:200px;
 	color:#FFF;
-	background-color: #1E88E5;
+	    background: linear-gradient(to right, rgb(0, 191, 143), rgb(0, 21, 16));
 }
 #section_managerial{
 	min-height:200px;
 	color:#FFF;
-	background-color: #673ab7;
+	background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
 }
 #section_informals{
 	min-height:200px;
 	color:#FFF;
-	background-color: #ff9800;
+	background: linear-gradient(to right, rgb(252, 70, 107), rgb(63, 94, 251));
 }
 #section_nights{
 	min-height:200px;
 	color:#FFF;
-	background-color: #009688;
+	background: linear-gradient(to right, rgb(195, 20, 50), rgb(36, 11, 54));
+
 }
+.tech_on_hover{
+	color:white;
+}
+.manage_on_hover{
+	color:white;
+}
+.informal_on_hover{
+	color:white;
+}
+.nights_on_hover{
+	color:white;
+}
+li a{
+	cursor: pointer;  
+}
+		btn_technical{
+		box-sizing: border-box;
+			cursor:pointer;
+		}
+		btn_managerial{
+		box-sizing: border-box;
+			cursor:pointer;
+		}
+		btn_informals{
+		box-sizing: border-box;
+			cursor:pointer;
+		}
+		btn_nights{
+		box-sizing: border-box;
+			cursor:pointer;
+		}
+		.flip-box {
+		  background-color: transparent;
+		  width: 100%;
+		  padding-bottom: 133.33%;
+		  border-radius: 10px;
+		  position: relative;
+		  perspective: 1000px;
+		}
+
+		div.flip-box > div {
+		  position: absolute;
+		  top: 0; bottom: 0; left: 0; right: 0;
+		}
+
+		.flip-box-inner {
+		  position: relative;
+		  width: 100%;
+		  height: 100%;
+		  border-radius: 10px;
+		  background-color:white;
+		  text-align: center;
+		  transition: transform 0.8s;
+		  transform-style: preserve-3d;
+		  
+		}
+
+		.flip-box:hover .flip-box-inner {
+		  transform: rotateY(180deg);
+		}
+
+		.flip-box-front, .flip-box-back {
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  border-radius: 9px;
+		  backface-visibility: hidden;
+		}
+
+		.flip-box-back {
+		  background: white;
+		  color: black;
+		  transform: rotateY(180deg);
+		}
+		div.col-sm-4{
+			padding: 3%;
+		}
+		div.img-text{
+			position: absolute;
+			bottom: 10px;
+			margin-left: 40%;
+		}
+		.para{
+			font-size: 24px;
+			padding: 10%;
+		}
+		.btn{
+			font-size: 18px;
+			margin-left: 3px;
+		}
+		div.buttons{
+			position: absolute;
+			bottom: 10%;
+			margin-left: 27%;
+		}
+		
+		#register{
+
+			text-decoration: none;
+			font-family: sans-serif;
+			background:#33cc33;
+			color:white;
+			pointer:cursor;
+			border-radius:30px;
+			
+		}
+		#details{
+			background:#ff9900;
+			color:white;
+			pointer:cursor;
+			border-radius:30px;
+		}
