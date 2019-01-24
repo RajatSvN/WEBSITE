@@ -4,154 +4,80 @@
 	<title></title>
 
 	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-	
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	<script src="js/eventhomejs.js"></script>
-
-	<style src="css/eventhomeCSS.css"></style>
 	<link rel="stylesheet" href="css/MobileNavBarCSS.css">
-
-	<style type="text/css">
-		#section_technical{
-			min-height:200px;
-			color:#FFF;
-			background-color: #1E88E5;
-		}
-		#section_managerial{
-			min-height:200px;
-			color:#FFF;
-			background-color: #673ab7;
-		}
-		#section_informals{
-			min-height:200px;
-			color:#FFF;
-			background-color: #ff9800;
-		}
-		#section_nights{
-			min-height:200px;
-			color:#FFF;
-			background-color: #009688;
-		}
-		.flip-box {
-		  background-color: transparent;
-		  width: 100%;
-		  padding-bottom: 133.33%;
-		  border-radius: 10px;
-		  position: relative;
-		  perspective: 1000px;
-		}
-
-		div.flip-box > div {
-		  position: absolute;
-		  top: 0; bottom: 0; left: 0; right: 0;
-		}
-
-		.flip-box-inner {
-		  position: relative;
-		  width: 100%;
-		  height: 100%;
-		  border-radius: 10px;
-		  text-align: center;
-		  transition: transform 0.8s;
-		  transform-style: preserve-3d;
-		}
-
-		.flip-box:hover .flip-box-inner {
-		  transform: rotateY(180deg);
-		}
-
-		.flip-box-front, .flip-box-back {
-		  position: absolute;
-		  width: 100%;
-		  height: 100%;
-		  border-radius: 9px;
-		  backface-visibility: hidden;
-		}
-
-		.flip-box-back {
-		  background-color: dodgerblue;
-		  color: white;
-		  transform: rotateY(180deg);
-		}
-		div.col-sm-4{
-			padding: 3%;
-		}
-		div.img-text{
-			position: absolute;
-			bottom: 10px;
-			margin-left: 40%;
-		}
-		.para{
-			font-size: 24px;
-			padding: 10%;
-		}
-		.btn{
-			font-size: 18px;
-			margin-left: 3px;
-		}
-		div.buttons{
-			position: absolute;
-			bottom: 10%;
-			margin-left: 27%;
-		}
-	</style>
+	<link rel="stylesheet" href="css/eventhomeCSS.css"></link>
+	<script>
+		
+	</script>
 </head>
 <body onload="init_eventhome()">
-	<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top timeout" style="justify-content : center;">
-		<div class="d-flex flex-column">
-<img src="images/logo2.jpg" style="border-radius: 50% ; height: 50px; width: 50px;">
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 10px;">
-<span class="navbar-toggler-icon"></span>
-</button>
-</div>
-
-
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-	<ul class="navbar-nav mr-auto">
-		<table>
-
-<tbody>
-	<tr>
-		<td><a class="nav-link" href="#"><img src="images/login.png" class="icon"><br><font color="white">Login</font></a></td>
-		<td><a class="nav-link" href="#"><img src="images/sponsor2.png" class="icon"><br><font color="white">Sponsors</font></a></td>
-		<td><a class="nav-link" href="#"><img src="images/workshop2.png" class="icon"><br><font color="white">Workshop</font></a></td>
-		<td><a class="nav-link" href="#"><img src="images/register.png" class="icon"><br><font color="white">Register</font></a></td>
-	</tr>
-	<tr>
-		<td><a class="nav-link" href="#"><img src="images/contact.png" class="icon"><br><font color="white">Contact</font></a></td>
-		<td><a class="nav-link" href="#"><img src="images/schedule.png" class="icon"><br><font color="white">Schedule</font></a></td>
-		<td><a class="nav-link" href="#"><img src="images/FeedBack.png" class="icon"><br><font color="white">Feedback</font></a></td>
-		<td><a class="nav-link" href="#"><img src="images/calendar.png" class="icon"><br><font color="white">Events</font></a></td>
-	</tr>
-	
-</tbody>
-</table>
+		<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top timeout" style="justify-content : center;">
+				<div class="d-flex flex-column">
+		<img src="images/logo2.jpg" style="border-radius: 50% ; height: 50px; width: 50px;">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-top: 10px;">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+	</div>
 		
-		
-	</ul>
 	
-</div>
-</nav>
-<div class="setting123">
-	<nav class="navbar navbar-inverse" style="margin-bottom: -5px">
-	  <div class="container-fluid">
-	    <ul class="nav navbar-nav">
-	      <li><a onclick="showTechnical()" id="btn_technical">Technical Events</a></li>
-	      <li><a onclick="showManagerial()" id="btn_managerial">Managerial Events</a></li>
-	      <li><a onclick="showInformals()" id="btn_informals">Informals</a></li>
-	      <li><a onclick="showNights()" id="btn_nights">Night Events</a></li>
-	    </ul>
-	  </div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	
+			<ul class="navbar-nav mr-auto">
+				<table>
+		
+		<tbody>
+			<tr>
+				<td><a class="nav-link" href="#"><img src="images/login.png" class="icon"><br><font color="white">Login</font></a></td>
+				<td><a class="nav-link" href="Sponsors.html"><img src="images/sponsor2.png" class="icon"><br><font color="white">Sponsors</font></a></td>
+				<td><a class="nav-link" href="Workshop.html"><img src="images/workshop2.png" class="icon"><br><font color="white">Workshop</font></a></td>
+				<td><a class="nav-link" href="#"><img src="images/register.png" class="icon"><br><font color="white">Register</font></a></td>
+			</tr>
+			<tr>
+				<td><a class="nav-link" href="Contacts"><img src="images/contact.png" class="icon"><br><font color="white">Contact</font></a></td>
+				<td><a class="nav-link" href="#"><img src="images/schedule.png" class="icon"><br><font color="white">Schedule</font></a></td>
+				<td><a class="nav-link" href="#"><img src="images/FeedBack.png" class="icon"><br><font color="white">Feedback</font></a></td>
+				<td><a class="nav-link" href="#"><img src="images/calendar.png" class="icon"><br><font color="white">Events</font></a></td>
+			</tr>
+			
+		</tbody>
+	</table>
+				
+				
+			</ul>
+			
+		</div>
 	</nav>
-
+	<div class="setting123">
+			<nav class="navbar navbar-expand-lg navbar-light bg-dark" style="color: #FFFFFF">
+					<a class="navbar-brand" href="#" style="color:#FFFFFF">EVENTS</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color:#FFFFFF">
+						<span class="navbar-toggler-icon" ></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							 <li class="nav-item" style="padding: 5px 10px">
+								<a onclick="showTechnical()" id="btn_technical">Technical Events</a>
+							</li>
+							<li class="nav-item" style="padding: 5px 10px">
+								<a onclick="showManagerial()" id="btn_managerial">Managerial Events</a>
+							</li>
+							<li class="nav-item" style="padding: 5px 10px">
+								<a onclick="showInformals()" id="btn_informals">Informals</a>
+							</li>
+							<li class="nav-item" style="padding: 5px 10px">
+								<a onclick="showNights()" id="btn_nights">Night Events</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 	<div id="section_technical" class="container-fluid">
 	  <h1>Technical Events</h1>  
 	  <div class="row">
@@ -167,8 +93,8 @@
 			    <div class="flip-box-back">
 			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
 			      <div class="buttons">
-			        <button class="align-self-end btn btn-primary">Register</button>
-			        <button class="align-self-end btn btn-secondary">Details</button>
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
 				  </div>
 			    </div>
 			  </div>
@@ -186,8 +112,8 @@
 			    <div class="flip-box-back">
 			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
 			      <div class="buttons">
-			        <button class="align-self-end btn btn-primary">Register</button>
-			        <button class="align-self-end btn btn-secondary">Details</button>
+			        <button class="align-self-end btn" id="register">Register</button>
+			        <button class="align-self-end btn" id="details">Details</button>
 				  </div>
 			    </div>
 			  </div>
@@ -205,8 +131,8 @@
 			    <div class="flip-box-back">
 			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
 			      <div class="buttons">
-			        <button class="align-self-end btn btn-primary">Register</button>
-			        <button class="align-self-end btn btn-secondary">Details</button>
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
 				  </div>
 			    </div>
 			  </div>
@@ -224,8 +150,8 @@
 			    <div class="flip-box-back">
 			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
 			      <div class="buttons">
-			        <button class="align-self-end btn btn-primary">Register</button>
-			        <button class="align-self-end btn btn-secondary">Details</button>
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
 				  </div>
 			    </div>
 			  </div>
@@ -243,8 +169,8 @@
 			    <div class="flip-box-back">
 			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
 			      <div class="buttons">
-			        <button class="align-self-end btn btn-primary">Register</button>
-			        <button class="align-self-end btn btn-secondary">Details</button>
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
 				  </div>
 			    </div>
 			  </div>
@@ -262,36 +188,414 @@
 			    <div class="flip-box-back">
 			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
 			      <div class="buttons">
-			        <button class="align-self-end btn btn-primary">Register</button>
-			        <button class="align-self-end btn btn-secondary">Details</button>
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
 				  </div>
 			    </div>
 			  </div>
 			</div>
 	  	  </div>
 		</div>
+		<div class="container-fluid">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
 	</div>
-</div>
 
 	<div id="section_managerial" class="container-fluid">
 	  <h1>Managerial Events</h1>
+	  <div class="row">
+	  	<div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+		</div>
+		<div class="container-fluid">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
 	</div>
 
 	<div id="section_informals" class="container-fluid">
 	  <h1>Informal Events</h1>
+	  <div class="row">
+	  	<div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+		</div>
+		<div class="container-fluid">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
 	</div>
 
 	<div id="section_nights" class="container-fluid">
 	  <h1>Night Events</h1>
+	  <div class="row">
+	  	<div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+	  	  <div class="col-sm-4">
+	  		<div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      	<div style="position: relative">
+   					   	<img src="images/img1.png" width="100%" height="100%" style="border-radius: 10px">
+			      		<h1><div class="img-text">Front</div></h1>
+			      	</div>
+			    </div>
+			    <div class="flip-box-back">
+			      <p class="para">The short description of the events goes here. Just make sure to end the description within the space of the card upto the buttons.</p>
+			      <div class="buttons">
+			        <button class="align-self-end btn " id="register">Register</button>
+			        <button class="align-self-end btn " id="details">Details</button>
+				  </div>
+			    </div>
+			  </div>
+			</div>
+	  	  </div>
+		</div>
+		<div class="container-fluid">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-	<script>
-		setTimeout(function () {
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script>
+	setTimeout(function () {
 var timeout1 = document.querySelector('.timeout');
 timeout1.classList.add('timeout2');
 },2300);
-	</script>
+
+</script>
 </body>
 </html>
