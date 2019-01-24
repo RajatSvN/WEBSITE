@@ -8,6 +8,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/floatdesktopnavbar.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	
@@ -98,10 +99,52 @@
 }
 	</style>
 
-	
+<!---------------DESKTOP NAVBAR------------------------->
+<div class="navbarparent">
+		<div class="navba" id="botnav">
+		<ul>
+		 
+		  <li class="nav-item">
+			
+			<a class="nav-link" href="#"><img src="images/calendar.png" class="icon"><br>Schedule</a>
+		  </li>
+		 
+		  <li class="nav-item">
+			
+			<a class="nav-link" href="#"><img src="images/workshop3.png" class="icon"><br>Workshop</a>
+		  </li>
+		
+		  <li class="nav-item"> 
+			
+			<a class="nav-link" href="#"><img src="images/contact.png" class="icon"><br>Contact</a>
+			
+		  </li>
+		  
+		  <li class="nav-item"> 
+			
+			<a class="nav-link" href="#"><img src="images/logo.png" class="mainicon"></a>
+		  </li>
 
-	
-   
+		  <li class="nav-item">
+			
+			<a class="nav-link" href="#"><img src="images/FeedBack.png" class="icon"><br>Feedback</a>
+		  </li>
+
+		  <li class="nav-item">
+			
+			<a class="nav-link" href="#"><img src="images/party.png" class="icon"><br>Events</a>
+		  </li> 
+		   
+		  <li class="nav-item">
+			
+			<a class="nav-link" href="#"><img src="images/sponsors.png" class="icon"><br>Sponsors</a>    
+		  </li>
+
+		</ul>
+		</div>
+	</div>
+<!----------------------------------------------------->
+
 		<row>
 			<div class="col-md-3"></div>
 				<div class="col-md-6">
