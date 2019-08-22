@@ -1,5 +1,5 @@
 body {
-      background: #262626;
+      background: #FF6501;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
       color:#000;
@@ -8,7 +8,7 @@ body {
     }
     .swiper-container {
       width: 100%;
-      padding-top:180px;
+      padding-top:235px;
      padding-bottom: 50px;
     }
     .swiper-slide {

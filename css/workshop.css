@@ -1,5 +1,5 @@
 div.row.featurette{
-	margin: 3% 0%;
+	padding: 3% 0%;
 }
 h2.featurette-heading{
 	margin: 1em 1em;
@@ -20,4 +20,10 @@ p.button{
 }
 div.date-time{
 	padding-bottom: 3%;
+}
+body{
+	color: #F5F5F5;
+}
+span{
+	color:#F5F5F5;
 }

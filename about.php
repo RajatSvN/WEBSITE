@@ -5,55 +5,15 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/socialCause.css">
+	
 	<link rel="stylesheet" href="css/floatdesktopnavbar.css">
 </head>
 <body>
 	<main role="main">
 		<!---------------DESKTOP NAVBAR------------------------->
-<div class="navbarparent">
-		<div class="navba" id="botnav">
-		<ul>
-		 
-		  <li class="nav-item">
-			
-			<a class="nav-link" href="#"><img src="images/calendar.png" class="icon"><br>Schedule</a>
-		  </li>
-		 
-		  <li class="nav-item">
-			
-			<a class="nav-link" href="#"><img src="images/workshop3.png" class="icon"><br>Workshop</a>
-		  </li>
-		
-		  <li class="nav-item"> 
-			
-			<a class="nav-link" href="#"><img src="images/contact.png" class="icon"><br>Contact</a>
-			
-		  </li>
-		  
-		  <li class="nav-item"> 
-			
-			<a class="nav-link" href="#"><img src="images/logo.png" class="mainicon"></a>
-		  </li>
 
-		  <li class="nav-item">
-			
-			<a class="nav-link" href="#"><img src="images/FeedBack.png" class="icon"><br>Feedback</a>
-		  </li>
+<? include("floatdesktopnavbar.php"); ?>
 
-		  <li class="nav-item">
-			
-			<a class="nav-link" href="#"><img src="images/party.png" class="icon"><br>Events</a>
-		  </li> 
-		   
-		  <li class="nav-item">
-			
-			<a class="nav-link" href="#"><img src="images/sponsors.png" class="icon"><br>Sponsors</a>    
-		  </li>
-
-		</ul>
-		</div>
-	</div>
 <!----------------------------------------------------->
 
 		<div class="container marketing">

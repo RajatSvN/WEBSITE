@@ -26,7 +26,8 @@
   flex-direction: column;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  height: 430vw;
+  height: 430vh;
+  width: 80%;
 	
 }
 .flexbox:hover img {
@@ -100,49 +101,9 @@
 	</style>
 
 <!---------------DESKTOP NAVBAR------------------------->
-<div class="navbarparent">
-		<div class="navba" id="botnav">
-		<ul>
-		 
-		  <li class="nav-item">
-			
-			<a class="nav-link" href="#"><img src="images/calendar.png" class="icon"><br>Schedule</a>
-		  </li>
-		 
-		  <li class="nav-item">
-			
-			<a class="nav-link" href="#"><img src="images/workshop3.png" class="icon"><br>Workshop</a>
-		  </li>
-		
-		  <li class="nav-item"> 
-			
-			<a class="nav-link" href="#"><img src="images/contact.png" class="icon"><br>Contact</a>
-			
-		  </li>
-		  
-		  <li class="nav-item"> 
-			
-			<a class="nav-link" href="#"><img src="images/logo.png" class="mainicon"></a>
-		  </li>
 
-		  <li class="nav-item">
-			
-			<a class="nav-link" href="#"><img src="images/FeedBack.png" class="icon"><br>Feedback</a>
-		  </li>
+<? file_get_contents("HTML/floatdesktopnavbar.html") ?>
 
-		  <li class="nav-item">
-			
-			<a class="nav-link" href="#"><img src="images/party.png" class="icon"><br>Events</a>
-		  </li> 
-		   
-		  <li class="nav-item">
-			
-			<a class="nav-link" href="#"><img src="images/sponsors.png" class="icon"><br>Sponsors</a>    
-		  </li>
-
-		</ul>
-		</div>
-	</div>
 <!----------------------------------------------------->
 
 		<row>

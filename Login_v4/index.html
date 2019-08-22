@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>SaferSystems preloader</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="preloader">
+  <div class="blobs-wrapper">
+    <div class="blobs left-top">
+      <div class="blob blue"></div>
+      <div class="blob blue"></div>
+      <div class="blob blue"></div>
+    </div>
+
+    <div class="blobs right-bottom">
+      <div class="blob red"></div>
+      <div class="blob red"></div>
+      <div class="blob red"></div>
+    </div>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feBlend in="SourceGraphic" in2="goo" />
+    	  </filter>
+    </defs>
+  </svg>
+</div>
+  
+  
+
+</body>
+
+</html>

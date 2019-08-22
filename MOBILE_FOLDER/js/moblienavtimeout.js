@@ -25,7 +25,7 @@ var login2 = document.querySelector('.login2');
 var p1 = document.querySelector('.p1');
 var p2 = document.querySelector('.p2');
 login.addEventListener('click',function () {
-    console.log('ada');
+    // console.log('ada');
     login2.classList.toggle('login1add');
     login1.classList.toggle('login1add');
     p2.classList.toggle('padd');
