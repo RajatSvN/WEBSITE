@@ -21,7 +21,7 @@
 				<div class="col-md-12">
 					<h2 class="featurette-heading">1. What is Sparsh?</h2>
 						<p class="lead">
-							Sparsh is the annual techno-cultural festival of the Sardar Vallabhbhai National Institute of Technology. It usually takes place in the second or third week of February, and is one of the largest of its kind in the Western Region. This five-day festival consists of mega-attractions, informal events, technical events, managerial events and numerous other competitions. The festivities of the day are followed by "Sparsh Nights - the Inaugural Night, Singing Night, Dancing Night, EDM Night and Celebrity Night.
+							Sparsh is the best annual technology-cultural festival of the Sardar Vallabhbhai National Institute of Technology. It usually takes place in the second or third week of February, and is one of the largest of it's kind in the Western Region. This five-days festival consists of mega-attractions, informal events, technical events, managerial events and numerous other competitions. The festivities of the day are followed by "Sparsh Nights - The Inaugural Night, Singing Night, Dancing Night, EDM Night and Celebrity Night.
 						</p>
 					</div>
 				</div>
