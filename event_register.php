@@ -1,5 +1,5 @@
 <?php
-$p_title = "Registeration-Events | ChES";
+$p_title = "Registration-Events | ChES";
 include('includes/header.html');
 include('../mysqli_connect.php');
 require('includes/config.inc.php');
