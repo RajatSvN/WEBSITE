@@ -1,14 +1,11 @@
 .sponsorImage{
-
-height: 125px;
-width: 125px;
-margin: 30px;
+  height: 125px;
+  width: 125px;
+  margin: 30px;
 }
 
-
 .imgContainer{
-  
- margin:30px;
+  margin:30px;
   height: 200px;
   width:200px;
   border-radius: 3%;
@@ -22,7 +19,6 @@ margin: 30px;
   background-color: #F3F4F3;
 }
 
-
 .imgContainer:hover{
   height: 205px;
   width: 205px;
@@ -33,22 +29,14 @@ margin: 30px;
 }
 
 #giveBackGround{
-
   width: 100%;
-
   background-color: #F3F4F3;
-
-  
-
 }
 
 .smallScreen{
   width: 100%;
   text-align: center;
   background-color: #F3F4F3;
-
-  
-
   display: none;
 }
 
@@ -62,17 +50,17 @@ margin: 30px;
   height:300px;
 }
   
-  @media screen and (max-width : 992px){
-    #giveBackGround{
-      display: none;
-    }
-    .smallScreen{
-      display: block;
-    }
-    .imgContainer{
-      display: inline-block;
-    }
-    .row{
-      display: inline-block;
-    }
+@media screen and (max-width : 992px){
+  #giveBackGround{
+    display: none;
   }
+  .smallScreen{
+    display: block;
+  }
+  .imgContainer{
+    display: inline-block;
+  }
+  .row{
+    display: inline-block;
+  }
+}
