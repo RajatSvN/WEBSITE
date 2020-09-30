@@ -1,1 +1,1 @@
-ADD website javascript/jQuery for mobile version in this folder
+ADD website javascript/jQuery for mobile version in this folder.
