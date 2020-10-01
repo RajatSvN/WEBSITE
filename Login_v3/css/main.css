@@ -16,7 +16,7 @@
 }
 
 @font-face {
-  font-family: Poppins-Bold;
+  font-family: Poppins-Bolder;
   src: url('../fonts/poppins/Poppins-Bold.ttf'); 
 }
 
@@ -73,7 +73,7 @@ p {
 	font-family: Poppins-Regular;
 	font-size: 14px;
 	line-height: 1.7;
-	color: #666666;
+	color: #66666;
 	margin: 0px;
 }
 
